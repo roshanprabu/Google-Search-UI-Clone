@@ -23,8 +23,9 @@
             width: 900px;
             height: 50px;
             text-align: left;
-            font-size: 30px;
-            padding-left: 10px;
+            font-size: 20px;
+            padding-left: 20px;
+            border-radius: 70px;
         }
         #sub{
             align-self: center;
@@ -34,21 +35,32 @@
             font-family: serif;
             font-size: 20px;
         }
+        .ab{
+            text-align: right;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     </style>
     <head>
-        <title>My CS50 Webpage</title> 
+        <title>My Google Search Page</title> 
+        <div class="ab">
+            <a href= "images.html">Image Search    |</a>
+            <a href= "advanced.html">Advanced Search    |</a>
+        </div>
+        
     </head>
+   
     <body>
+        
         <h3>Custom Google Search Page</h3>
         <h4>Made for CS50W Course</h4>
         <hr color="black">
         <div id="foo">
             <form action="https://www.google.com/search">
-                <input id="sch" type="text" name="q">
-                <input id = "sub" type="submit" value="Search">
+                <input id="sch" placeholder="Enter Query" type="text" name="q">
+                <input id = "sub" type="submit" value="Google Search">
             </form>
-            <h2>This commit is done on GitHub.</h2>
-            <a href= "https://google.com">Google.com</a>
+            
         </div>
     </body>
 </html>
