@@ -1,64 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        h3 {
-            color: 2B2B2B;
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 30px;
-        }
-        #foo{
-            text-align: center;
-        }
-        #sch{
-            align-self: center;
-            width: 900px;
-            height: 50px;
-            text-align: left;
-            font-size: 20px;
-            padding-left: 20px;
-            border-radius: 70px;
-        }
-        #sub{
-            align-self: center;
-            width: 700px;
-            height: 30px;
-            margin-top: 10px;
-            font-family: serif;
-            font-size: 20px;
-        }
-        #ab{
-            padding-left: 25px;
-            padding-right: 25px;
-            align-self: right;
-        }
-        #image{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 500px;
-        }
-    </style>
-    <head>
-        <title>My Google Search Page</title> 
-        <div id="ab">
-            <a href= "index.html">Regular Search    |</a>
-            <a href= "advanced.html">Advanced Search    |</a>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image search</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-links">
+            <a href="index.html">Google Search</a>
+            <a href="advanced.html">Google Advanced Search</a>
         </div>
-        
-    </head>
-   
-    <body>
-        <div>
-            <img id="image" src="https://www.pngall.com/wp-content/uploads/5/Google-Logo-PNG-Free-Image.png" alt="Google">
+    </div>
+    <div class="search-container">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+        <div class="logo-subtext">
+            <span>images</span>
         </div>
-        </div>
-        <div id="foo">
-            <form action="https://images.google.com/search">
-                <input id="sch" placeholder="Enter Query" type="text" name="q">
-                <input id = "sub" type="submit" value="Google Search">
-            </form>
-            
-        </div>
-    </body>
+        <form action="https://www.google.com/search" method="get">
+            <div class="search-field">
+                <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#808080" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8.5" r="5" /><path d="m17.571 17.5-5.571-5.5" /></g></svg>
+                <input type="text" name="q">
+            </div>
+            <input type="hidden" name="tbm" value="isch" />
+        </form>
+    </div>
+</body>
 </html>
